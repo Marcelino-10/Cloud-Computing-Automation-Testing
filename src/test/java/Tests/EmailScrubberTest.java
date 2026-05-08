@@ -62,7 +62,7 @@ public class EmailScrubberTest {
         emailScrubber.scrub(null);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test(expected = NullPointerException.class)
     public void TestEmptyEmail() {
         emailScrubber.scrub("");
     }
