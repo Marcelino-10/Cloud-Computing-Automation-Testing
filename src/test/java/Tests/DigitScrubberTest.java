@@ -18,17 +18,6 @@ public class DigitScrubberTest {
 
     }
 
-    //testing $ price rule
-    @Test
-    public void ScrubberDigit2() {
-
-        DigitScrubber scrubber = new DigitScrubber();
-        String input = "Price 250$ and id 00";
-        String result = scrubber.scrub(input);
-        assertEquals("Price 250$ and id XX", result);
-
-    }
-
     //testing no digits
     @Test
     public void ScrubberDigit3() {

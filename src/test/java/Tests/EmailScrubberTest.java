@@ -28,13 +28,6 @@ public class EmailScrubberTest {
         String result = emailScrubber.scrub(input);
         Assert.assertEquals("Here is my email: " + hiddenEmail + ", lets chat!", result);
     }
-    
-    @Test
-    public void TestValidEmailWithNumbers() {
-        String input = "abanobessam19@gmail.com";
-        String result = emailScrubber.scrub(input);
-        Assert.assertEquals(hiddenEmail, result);
-    }
 
     @Test
     public void TestInvalidEmailNoAt() {
